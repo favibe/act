@@ -66,5 +66,25 @@ function Ani() {
 //     </div>
 //   );
 // }
+
+
+
+//Functui tododist
+const todos = [
+     { task: "mow the yard", id: crypto.randomUUID() },
+    { task: "Work on Odin Projects", id: crypto.randomUUID() },
+    { task: "feed the cat", id: crypto.randomUUID() },
+];
+function TodoList() {
+  return (
+    <ul>
+      {todos.map((todo) => (
+        // DON'T do the following i.e. generating keys during render
+        <li key={todo.id}>{todo.task}</li>
+      ))}
+    </ul>
+  );
+}
 export {Hello};
 export {Ani};
+export{TodoList};
