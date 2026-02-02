@@ -85,6 +85,30 @@ function TodoList() {
     </ul>
   );
 }
+
+
+function Button(props) {
+    const buttonStyle = {
+        color: props.color,
+        fontSize: props.fontSize + "px"
+    };
+    return (
+        <button style={buttonStyle}>{props.text}</button>
+    );
+}
+
+function Click () {
+    return (
+        <div>
+            <Button color="blue" text="Click Me!" fontSize={24} />
+            <Button color="red" text=" Don't Click Me!" fontSize={12} />
+            <Button color="green" text="Maybe Click Me!" fontSize={20} />
+        </div>
+    );
+}
+//Using props destructuring
+
+
 export {Hello};
 export {Ani};
 export{TodoList};
