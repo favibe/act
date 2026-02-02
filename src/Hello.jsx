@@ -107,7 +107,7 @@ function Click () {
     );
 }
 //Using props destructuring
-function btn({color, text, fontSize}) {
+function Btn({color, text, fontSize}) {
     const buttonStyle = {
         color: color,
         fontSize: fontSize + "px"
@@ -115,6 +115,27 @@ function btn({color, text, fontSize}) {
     return (
         <button style={buttonStyle}>{text}</button>
     );
+}
+//Default Props: 
+/*  A way to stop repating values to avoid repittion and undefined value*/
+
+function Btnn ({color = "black", text= "Submit", fontSize = 16}) {
+    const buttonStyle = {
+        color: color,
+        fontSize: fontSize + "px"
+    };
+    return (
+        <button style={buttonStyle}>{text}</button>
+    );
+}
+function Clickk() {
+    return (
+        <div>
+            <Btnn />
+            <Btnn color="purple" text="Save this" />
+            <Btnn fontSize={20} />
+        </div>
+    )
 }
 
 
