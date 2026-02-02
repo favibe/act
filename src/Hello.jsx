@@ -135,8 +135,62 @@ function Clickk() {
             <Btnn color="purple" text="Save this" />
             <Btnn fontSize={20} />
         </div>
-    )
+    );
 }
+
+
+//function as props
+function Button1({ text = "Click Me!", color = "blue", fontSize = 12, handleClick }) {
+  const buttonStyle = {
+    color: color,
+    fontSize: fontSize + "px"
+  };
+
+  return (
+    <button onClick={handleClick} style={buttonStyle}>
+      {text}
+    </button>
+  );
+}
+
+  function Btn2() {
+  const handleButtonClick = () => {
+    window.location.href = "https://www.google.com";
+  };
+
+  return (
+    <div>
+      <Button1 handleClick={handleButtonClick} />
+    </div>
+  );
+}
+//we differnt arguments in the function as props.
+function Button2({ text = "Click Me!", color = "blue", fontSize = 12, handleClick }) {
+  const buttonStyle = {
+    color: color,
+    fontSize: fontSize + "px"
+  };
+
+  return (
+    <button onClick={handleClick} style={buttonStyle}>
+      {text}
+    </button>
+  );
+}
+
+ function Btn3() {
+  const handleButtonClick = (url) => {
+    window.location.href = url;
+  };
+
+  return (
+    <div>
+      <Button2 handleClick={() => handleButtonClick('https://www.theodinproject.com')} />
+    </div>
+  );
+}
+
+
 
 
 export {Hello};
