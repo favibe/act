@@ -5,7 +5,7 @@ import App from './App.jsx'
 import {Hello} from './Hello.jsx'
 import {Ani} from './Hello.jsx'
 import { TodoList } from './Hello.jsx'
-import {Geek} from './Geek.js'
+import {Geek} from './Geek.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

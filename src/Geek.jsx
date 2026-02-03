@@ -1,6 +1,6 @@
 //File path: src/App.js
 import React from 'react';
-import ProductList from './ProductList.js';
+import ProductList from './ProductList.jsx';
 
 const Geek = () => {
     const products = [
