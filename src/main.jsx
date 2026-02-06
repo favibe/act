@@ -5,13 +5,13 @@ import App from './App.jsx'
 import {Hello} from './Hello.jsx'
 import {Ani} from './Hello.jsx'
 import { TodoList } from './Hello.jsx'
-import {Geek} from './Geek.jsx'
+import { Counter } from './Counter.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
 
     <Ani />
     <TodoList />
-    <Geek />
+    <Counter />
   </StrictMode>,
 )
