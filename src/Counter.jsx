@@ -40,7 +40,7 @@ export {Counter};
                     top: "10vh",
                 }}
             >
-                {counter}
+                {count}
             </div>
             <div className="buttons">
                 <button
